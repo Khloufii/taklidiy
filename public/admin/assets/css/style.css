@@ -106,6 +106,24 @@
 /* === Import template variables === */
 /*-------------------------------------------------------------------*/
 /* === SCSS Compass Functions === */
+
+@media print{
+  #sidebar,#impression{
+      display: none;
+  }  
+  #impr,#imprr,#heder,#heder2,#heder3{
+    display: none;
+  }
+}
+
+.logo-narsa{
+  color: #898b8a;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo-n{
+  background-color: #050000;
+  color: #059cec;
+}
 @-moz-keyframes flash {
   0% {
     opacity: 1; }

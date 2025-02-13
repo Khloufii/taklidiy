@@ -3,7 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
-
+use App\Http\Controllers\VoituresController;
+use App\Http\Controllers\HotelsController;
+use App\Http\Controllers\VolsController;
+use App\Http\Controllers\ReservationeVoiture;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +17,11 @@ use App\Http\Controllers\AdminController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
+
+
+
+
 
 Route::middleware([
     'auth:sanctum',
